@@ -80,7 +80,7 @@ button {
 
 .btn:hover,
 .btn:focus {
-  filter: brightness(0.9);
+  filter: brightness(0.7);
   transition: 0.3s ease;
 }
 
