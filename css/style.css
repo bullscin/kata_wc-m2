@@ -1,0 +1,235 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Regular"),
+    url("../fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Medium"),
+    url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Bold"),
+    url("../fonts/TTLakes/TTLakesCompressed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: #000;
+  font-family: "TTLakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+  background-position: center;
+  background-size: inherit;
+  background-repeat: no-repeat;
+
+  filter: brightness(1);
+  transition: 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  filter: brightness(0.9);
+  transition: 0.3s ease;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.menu__mobile {
+  max-width: 320px;
+  min-height: 100%;
+
+  color: #1b1c21;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+/* ------Header------------------------------------- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav--modile {
+  min-width: 320px;
+  padding: 19px 24px;
+  margin-bottom: 31px;
+}
+
+.menu-left {
+  display: flex;
+  gap: 0 16px;
+}
+
+.menu-right {
+  display: flex;
+  gap: 0 20px;
+}
+
+.menu__btn-x {
+  background-image: url("../images/ic/burger-x.svg");
+}
+
+.info__button--search {
+  background-image: url("../images/ic/search.svg");
+}
+/* ------Main------------------------------------- */
+.main--m {
+  flex: 1 1 auto;
+}
+
+.menu__list--mobile {
+  padding: 0 24px 32px;
+}
+
+.main__button-mobile {
+  position: relative;
+  font-family: "TTLakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.main__button-mobile:focus::before,
+.main__button-mobile:hover::before {
+  left: -24px;
+}
+
+.main__button-mobile::before,
+.main__button-mobile::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../images/ic/stick-hf.svg");
+  left: -100px;
+  bottom: -4px;
+
+  transition: left 0.3s ease;
+}
+.main__button-mobile:focus,
+.main__button-mobile:hover {
+  color: #7e7e82;
+  transition: color 0.3s ease;
+}
+
+/* ------Footer------------------------------------ */
+.footer--mobile {
+  padding: 0 24px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__list--f {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.menu__button--call {
+  background-image: url("../images/ic/call.svg");
+}
+.menu__button--chat {
+  background-image: url("../images/ic/chat.svg");
+}
+.menu__button--profile {
+  background-image: url("../images/ic/profile.svg");
+}
+.email {
+  margin-bottom: 12px;
+}
+
+.phone {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.languages {
+  display: flex;
+  gap: 0 16px;
+}
+
+.radio__btn {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  clip: rect(0 0 0 0);
+  opacity: 1;
+  color: #1b1c21;
+  transition: all 0.3s ease;
+}
+
+.radio__btn:checked + .radio__btn-text {
+  color: #7e7e82;
+  transition: color 0.3s ease;
+}
+
+.radio__btn-text:focus,
+.radio__btn-text:hover {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
