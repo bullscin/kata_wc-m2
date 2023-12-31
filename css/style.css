@@ -75,13 +75,13 @@ button {
   background-repeat: no-repeat;
 
   opacity: 1;
-  transition: 0.3s ease;
+  transition: opacity 0.3s ease-in;
 }
 
 .btn:hover,
 .btn:focus {
-  opacity: 0.6;
-  transition: 0.3s ease;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
 }
 
 .container {
