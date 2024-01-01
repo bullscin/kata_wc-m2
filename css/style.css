@@ -232,7 +232,7 @@ button {
   transition: all 0.3s ease;
 }
 
-.radio__btn > label {
+.btn-radio > label {
   color: #1b1c21;
 }
 
