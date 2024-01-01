@@ -10,58 +10,52 @@
   <body>
     <div class="menu__mobile">
       <header class="header">
-        <div class="container">
-          <nav class="nav header__nav--modile">
-            <div class="menu-left menu-left-m">
-              <button class="btn menu__btn-x">
-                <a href="#" class=""> </a>
-              </button>
+        <nav class="nav header__nav--modile">
+          <div class="menu-left menu-left-m">
+            <button class="btn menu__btn-x">
+              <a href="#" class=""> </a>
+            </button>
 
-              <a href="#" class="logo"
-                ><img src="images/logo.png" alt="Логотип" class="logo__img"
-              /></a>
-            </div>
+            <a href="#" class="logo"
+              ><img src="images/logo.png" alt="Логотип" class="logo__img"
+            /></a>
+          </div>
 
-            <button class="btn info__button info__button--search"></button>
-          </nav>
-        </div>
+          <button class="btn info__button info__button--search"></button>
+        </nav>
       </header>
       <!--  -->
       <main class="main main--m">
-        <div class="container">
-          <nav class="nav__main">
-            <ul class="menu__list--mobile">
-              <li class="menu__item--m">
-                <button class="main__button-mobile">Ремонт техники</button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">Услуги и сервисы</button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">
-                  Корпоративным клиентам
-                </button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">Продавцам техники</button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">Партнерам</button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">Производителям</button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">
-                  Наши сервисные центры
-                </button>
-              </li>
-              <li class="menu__item--m">
-                <button class="main__button-mobile">Контакты</button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="nav__main">
+          <ul class="menu__list--mobile">
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Ремонт техники</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Услуги и сервисы</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">
+                Корпоративным клиентам
+              </button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Продавцам техники</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Партнерам</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Производителям</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Наши сервисные центры</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Контакты</button>
+            </li>
+          </ul>
+        </nav>
       </main>
       <footer class="footer--mobile">
         <ul class="menu__list--f">
@@ -79,20 +73,26 @@
         <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
         <a href="tel:88008908900" class="phone">8 800 890 89006</a>
 
-        <div class="languages">
-          <label>
-            <input class="radio__btn" type="radio" name="lang" />
-            <span class="radio__btn-text">RU</span>
-          </label>
-          <label>
-            <input class="radio__btn" type="radio" name="lang" />
-            <span class="radio__btn-text" lang="en">EN</span>
-          </label>
-          <label>
-            <input class="radio__btn" type="radio" name="lang" />
-            <span class="radio__btn-text" for="ch" lang="ch">CH</span>
-          </label>
-        </div>
+        <ul class="languages">
+          <li>
+            <button class="btn-radio">
+              <input class="radio__btn" type="radio" name="lang" id="ru" />
+              <label for="ru">RU</label>
+            </button>
+          </li>
+          <li>
+            <button class="btn-radio">
+              <input class="radio__btn" type="radio" name="lang" id="en" />
+              <label lang="en" for="en">EN</label>
+            </button>
+          </li>
+          <li>
+            <button class="btn-radio">
+              <input class="radio__btn" type="radio" name="lang" id="ch" />
+              <label for="ch" lang="ch" forr="ch">CH</label>
+            </button>
+          </li>
+        </ul>
       </footer>
     </div>
   </body>
