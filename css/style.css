@@ -247,8 +247,8 @@ button {
   transition: color 0.3s ease;
 }
 
-.btn__radio--text:focus,
-.btn__radio--text:hover {
+btn__radio:focus,
+btn__radio:hover {
   color: #7e7e82;
   transition: color 0.3s ease;
 }
