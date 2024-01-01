@@ -222,27 +222,26 @@ button {
   gap: 0 16px;
 }
 
-.radio__btn {
+.btn__radio--input {
   position: absolute;
   width: 1px;
   height: 1px;
   visibility: hidden;
   clip: rect(0 0 0 0);
-/*   color: #1b1c21; */
-  transition: all 0.3s ease;
 }
 
-.btn-radio > label {
+.btn__radio--text {
   color: #1b1c21;
+  transition: color 0.3s ease;
 }
 
-.radio__btn:checked + .radio__btn-text {
+.btn__radio--text:focus,
+.btn__radio--text:hover {
   color: #7e7e82;
   transition: color 0.3s ease;
 }
 
-.btn-radio:focus,
-.btn-radio:hover {
+.btn__radio--input:checked + .btn__radio--text {
   color: #7e7e82;
   transition: color 0.3s ease;
 }
