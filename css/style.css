@@ -16,8 +16,10 @@ body {
 input,
 textarea,
 select,
-button {
+button,
+label {
   font: inherit;
+  color: inherit;
 }
 
 @font-face {
