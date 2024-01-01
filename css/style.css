@@ -64,11 +64,14 @@ a {
 ul {
   list-style: none;
 }
+
 button {
-  border: none;
   padding: 0;
+  border: none;
   border-radius: 0;
+  color: inherit;
   background-color: transparent;
+
   cursor: pointer;
 }
 
