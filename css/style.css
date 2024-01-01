@@ -2,15 +2,22 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 html,
 body {
   height: 100%;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+input,
+textarea,
+select,
+button {
+  font: inherit;
 }
 
 @font-face {
@@ -45,6 +52,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  letter-spacing: -0.2px;
 }
 
 a {
@@ -147,13 +155,6 @@ button {
 
 .main__button-mobile {
   position: relative;
-  font-family: "TTLakes";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1b1c21;
 
   margin-bottom: 32px;
   transition: all 0.3s ease;
@@ -206,7 +207,6 @@ button {
 }
 .email {
   margin-bottom: 12px;
-
   display: block;
 }
 
@@ -214,6 +214,7 @@ button {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+  letter-spacing: -0.6px;
   margin-bottom: 40px;
 }
 
