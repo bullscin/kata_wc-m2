@@ -228,8 +228,12 @@ button {
   height: 1px;
   visibility: hidden;
   clip: rect(0 0 0 0);
-  color: #1b1c21;
+/*   color: #1b1c21; */
   transition: all 0.3s ease;
+}
+
+.radio__btn > label {
+  color: #1b1c21;
 }
 
 .radio__btn:checked + .radio__btn-text {
