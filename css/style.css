@@ -96,11 +96,6 @@ button {
   transition: opacity 0.3s ease-in;
 }
 
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  height: 100%;
-}
 .menu__mobile {
   max-width: 320px;
   min-height: 100%;
