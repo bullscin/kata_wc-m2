@@ -1,253 +1,116 @@
-html {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Второй макет</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="menu__mobile">
+      <header class="header">
+        <nav class="nav header__nav--modile">
+          <div class="menu-left menu-left-m">
+            <button class="btn menu__btn-x">
+              <a href="#" class=""> </a>
+            </button>
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
+            <a href="#" class="logo"
+              ><img src="images/logo.png" alt="Логотип" class="logo__img"
+            /></a>
+          </div>
 
-html,
-body {
-  height: 100%;
-}
+          <button class="btn info__button info__button--search"></button>
+        </nav>
+      </header>
+      <!--  -->
+      <main class="main main--m">
+        <nav class="nav__main">
+          <ul class="menu__list--mobile">
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Ремонт техники</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Услуги и сервисы</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">
+                Корпоративным клиентам
+              </button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Продавцам техники</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Партнерам</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Производителям</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Наши сервисные центры</button>
+            </li>
+            <li class="menu__item--m">
+              <button class="main__button-mobile">Контакты</button>
+            </li>
+          </ul>
+        </nav>
+      </main>
+      <footer class="footer--mobile">
+        <ul class="menu__list--f">
+          <li class="menu__item">
+            <button class="btn menu__button--call"></button>
+          </li>
+          <li class="menu__item">
+            <button class="btn menu__button--chat"></button>
+          </li>
+          <li class="menu__item">
+            <button class="btn menu__button--profile"></button>
+          </li>
+        </ul>
 
-input,
-textarea,
-select,
-button,
-label {
-  font: inherit;
-}
+        <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
+        <a href="tel:88008908900" class="phone">8 800 890 89006</a>
 
-@font-face {
-  font-family: "TTLakes";
-  src: local("TTLakes-Regular"),
-    url("../fonts/TTLakes/TTLakes-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTLakes";
-  src: local("TTLakes-Medium"),
-    url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTLakes";
-  src: local("TTLakes-Bold"),
-    url("../fonts/TTLakes/TTLakesCompressed-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  color: #1b1c21;
-  font-family: "TTLakes";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-button {
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  color: inherit;
-  background-color: transparent;
-
-  cursor: pointer;
-}
-
-.btn {
-  display: block;
-  align-self: center;
-  width: 40px;
-  height: 40px;
-  background-color: #ff3e79;
-  border-radius: 50%;
-  background-position: center;
-  background-size: inherit;
-  background-repeat: no-repeat;
-
-  opacity: 1;
-  transition: opacity 0.3s ease-in;
-}
-
-.btn:hover,
-.btn:focus {
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in;
-}
-
-.menu__mobile {
-  max-width: 320px;
-  min-height: 100%;
-  overflow: auto;
-
-  display: flex;
-  flex-direction: column;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
-.menu__mobile::-webkit-scrollbar {
-  display: none;
-  width: 0 !important;
-}
-
-/* ------Header------------------------------------- */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__nav--modile {
-  min-width: 320px;
-  padding: 19px 24px;
-  margin-bottom: 31px;
-}
-
-.menu-left {
-  display: flex;
-  gap: 0 16px;
-}
-
-.menu-right {
-  display: flex;
-  gap: 0 20px;
-}
-
-.menu__btn-x {
-  background-image: url("../images/ic/burger-x.svg");
-}
-
-.info__button--search {
-  background-image: url("../images/ic/search.svg");
-}
-/* ------Main------------------------------------- */
-.main--m {
-  flex: 1 0 auto;
-}
-
-.menu__list--mobile {
-  padding: 0 24px 32px;
-}
-
-.main__button-mobile {
-  position: relative;
-  color: #1b1c21;
-  margin-bottom: 32px;
-  transition: all 0.3s ease;
-}
-
-.main__button-mobile:focus::before,
-.main__button-mobile:hover::before {
-  left: -24px;
-}
-
-.main__button-mobile::before,
-.main__button-mobile::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 32px;
-  background-color: transparent;
-  background-image: url("../images/ic/stick-hf.svg");
-  left: -100px;
-  bottom: -4px;
-
-  transition: left 0.3s ease;
-}
-.main__button-mobile:focus,
-.main__button-mobile:hover {
-  color: #7e7e82;
-  transition: color 0.3s ease;
-}
-
-/* ------Footer------------------------------------ */
-.footer--mobile {
-  padding: 0 24px 32px;
-  display: flex;
-  flex-direction: column;
-}
-
-.menu__list--f {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-.menu__button--call {
-  background-image: url("../images/ic/call.svg");
-}
-.menu__button--chat {
-  background-image: url("../images/ic/chat.svg");
-}
-.menu__button--profile {
-  background-image: url("../images/ic/profile.svg");
-}
-.email {
-  margin-bottom: 12px;
-  display: block;
-}
-
-.phone {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.6px;
-  margin-bottom: 40px;
-}
-
-.languages {
-  display: flex;
-  gap: 0 16px;
-}
-
-.btn__radio--input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  visibility: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.btn__radio--text {
-  color: #1b1c21;
-  font-family: "TTLakes";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-
-  transition: color 0.3s ease;
-}
-
-.btn__radio--text:focus,
-.btn__radio--text:hover {
-  color: #7e7e82;
-  transition: color 0.3s ease;
-}
-
-.btn__radio--input:checked + .btn__radio--text {
-  color: #7e7e82;
-  transition: color 0.3s ease;
-}
+        <ul class="languages">
+          <li>
+            <button class="btn__radio">
+              <input
+                class="btn__radio--input"
+                type="radio"
+                name="lang"
+                id="ru"
+              />
+              <label class="btn__radio--text" for="ru">RU</label>
+            </button>
+          </li>
+          <li>
+            <button class="btn__radio">
+              <input
+                class="btn__radio--input"
+                type="radio"
+                name="lang"
+                id="en"
+              />
+              <label class="btn__radio--text" lang="en" for="en">EN</label>
+            </button>
+          </li>
+          <li>
+            <button class="btn__radio">
+              <input
+                class="btn__radio--input"
+                type="radio"
+                name="lang"
+                id="ch"
+              />
+              <label class="btn__radio--text" for="ch" lang="ch" forr="ch"
+                >CH</label
+              >
+            </button>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
