@@ -1,195 +1,253 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Третий макет</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <h1 class="title">Ремонт техники различных брендов</h1>
-      </div>
-    </header>
-    <main class="main">
-      <div class="swiper">
-        <ul class="swiper-wrapper brands__list--mobile">
-          <li class="swiper-slide brands__item" style="width: 240px">
-            <img
-              src="images/brands/lenovo.png"
-              alt="Логотип lenovo"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img
-              src="images/brands/samsung.png"
-              alt="Логотип samsung"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img
-              src="images/brands/apple.png"
-              alt="Логотип apple"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item" style="width: 240px">
-            <img
-              src="images/brands/viewsonic.png"
-              alt="Логотип viewsonic"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img
-              src="images/brands/bosch.png"
-              alt="Логотип bosch"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img
-              src="images/brands/hp.png"
-              alt="Логотип hp"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item" style="width: 240px">
-            <img
-              src="images/brands/acer.png"
-              alt="Логотип acer"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img src="images/brands/sony.png" alt="Логотип sony" /><button
-              class="brands__btn"
-            ></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img
-              src="images/brands/lenovo.png"
-              alt="Логотип lenovo"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item" style="width: 240px">
-            <img
-              src="images/brands/samsung.png"
-              alt="Логотип samsung"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-          <li class="swiper-slide brands__item">
-            <img
-              src="images/brands/apple.png"
-              alt="Логотип apple"
-              class="brands__img"
-            /><button class="brands__btn"></button>
-          </li>
-        </ul>
+html {
+  box-sizing: border-box;
+}
 
-        <div class="swiper-pagination"></div>
-      </div>
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
-      <div class="brands container">
-        <div class="brands--wrapper">
-          <ul class="brands__list--desktop">
-            <li class="brands__item">
-              <img
-                src="images/brands/lenovo.png"
-                alt="Логотип lenovo"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/samsung.png"
-                alt="Логотип samsung"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/apple.png"
-                alt="Логотип apple"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/viewsonic.png"
-                alt="Логотип viewsonic"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/bosch.png"
-                alt="Логотип bosch"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/hp.png"
-                alt="Логотип hp"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/acer.png"
-                alt="Логотип acer"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/sony.png"
-                alt="Логотип sony"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/lenovo.png"
-                alt="Логотип lenovo"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/samsung.png"
-                alt="Логотип samsung"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-            <li class="brands__item">
-              <img
-                src="images/brands/apple.png"
-                alt="Логотип apple"
-                class="brands__img"
-              /><button class="brands__btn"></button>
-            </li>
-          </ul>
+html,
+body {
+  height: 100%;
+}
 
-          <ul class="show">
-            <li><button class="show__btn">Показать все</button></li>
-            <li><button class="hide__btn">Скрыть</button></li>
-          </ul>
-        </div>
-      </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
-</html>
+input,
+textarea,
+select,
+button,
+label {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Regular"),
+    url("../fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Medium"),
+    url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Bold"),
+    url("../fonts/TTLakes/TTLakesCompressed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: #1b1c21;
+  font-family: "TTLakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+  background-position: center;
+  background-size: inherit;
+  background-repeat: no-repeat;
+
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+}
+
+.menu__mobile {
+  max-width: 320px;
+  min-height: 100%;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.menu__mobile::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+/* ------Header------------------------------------- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav--modile {
+  min-width: 320px;
+  padding: 19px 24px;
+  margin-bottom: 31px;
+}
+
+.menu-left {
+  display: flex;
+  gap: 0 16px;
+}
+
+.menu-right {
+  display: flex;
+  gap: 0 20px;
+}
+
+.menu__btn-x {
+  background-image: url("../images/ic/burger-x.svg");
+}
+
+.info__button--search {
+  background-image: url("../images/ic/search.svg");
+}
+/* ------Main------------------------------------- */
+.main--m {
+  flex: 1 0 auto;
+}
+
+.menu__list--mobile {
+  padding: 0 24px 32px;
+}
+
+.main__button-mobile {
+  position: relative;
+  color: #1b1c21;
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.main__button-mobile:focus::before,
+.main__button-mobile:hover::before {
+  left: -24px;
+}
+
+.main__button-mobile::before,
+.main__button-mobile::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../images/ic/stick-hf.svg");
+  left: -100px;
+  bottom: -4px;
+
+  transition: left 0.3s ease;
+}
+.main__button-mobile:focus,
+.main__button-mobile:hover {
+  color: #7e7e82;
+  transition: color 0.3s ease;
+}
+
+/* ------Footer------------------------------------ */
+.footer--mobile {
+  padding: 0 24px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__list--f {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.menu__button--call {
+  background-image: url("../images/ic/call.svg");
+}
+.menu__button--chat {
+  background-image: url("../images/ic/chat.svg");
+}
+.menu__button--profile {
+  background-image: url("../images/ic/profile.svg");
+}
+.email {
+  margin-bottom: 12px;
+  display: block;
+}
+
+.phone {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+
+.languages {
+  display: flex;
+  gap: 0 16px;
+}
+
+.btn__radio--input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.btn__radio--text {
+  color: #1b1c21;
+  font-family: "TTLakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  transition: color 0.3s ease;
+}
+
+.btn__radio--text:focus,
+.btn__radio--text:hover {
+  color: #7e7e82;
+  transition: color 0.3s ease;
+}
+
+.btn__radio--input:checked + .btn__radio--text {
+  color: #7e7e82;
+  transition: color 0.3s ease;
+}
