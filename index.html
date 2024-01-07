@@ -3,114 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Второй макет</title>
+    <title>Третий макет</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="menu__mobile">
-      <header class="header">
-        <nav class="nav header__nav--modile">
-          <div class="menu-left menu-left-m">
-            <button class="btn menu__btn-x">
-              <a href="#" class=""> </a>
-            </button>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Ремонт техники различных брендов</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="swiper">
+        <ul class="swiper-wrapper brands__list--mobile">
+          <li class="swiper-slide brands__item" style="width: 240px">
+            <img
+              src="images/brands/lenovo.png"
+              alt="Логотип lenovo"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img
+              src="images/brands/samsung.png"
+              alt="Логотип samsung"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img
+              src="images/brands/apple.png"
+              alt="Логотип apple"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item" style="width: 240px">
+            <img
+              src="images/brands/viewsonic.png"
+              alt="Логотип viewsonic"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img
+              src="images/brands/bosch.png"
+              alt="Логотип bosch"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img
+              src="images/brands/hp.png"
+              alt="Логотип hp"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item" style="width: 240px">
+            <img
+              src="images/brands/acer.png"
+              alt="Логотип acer"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img src="images/brands/sony.png" alt="Логотип sony" /><button
+              class="brands__btn"
+            ></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img
+              src="images/brands/lenovo.png"
+              alt="Логотип lenovo"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item" style="width: 240px">
+            <img
+              src="images/brands/samsung.png"
+              alt="Логотип samsung"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+          <li class="swiper-slide brands__item">
+            <img
+              src="images/brands/apple.png"
+              alt="Логотип apple"
+              class="brands__img"
+            /><button class="brands__btn"></button>
+          </li>
+        </ul>
 
-            <a href="#" class="logo"
-              ><img src="images/logo.png" alt="Логотип" class="logo__img"
-            /></a>
-          </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
-          <button class="btn info__button info__button--search"></button>
-        </nav>
-      </header>
-      <!--  -->
-      <main class="main main--m">
-        <nav class="nav__main">
-          <ul class="menu__list--mobile">
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Ремонт техники</button>
+      <div class="brands container">
+        <div class="brands--wrapper">
+          <ul class="brands__list--desktop">
+            <li class="brands__item">
+              <img
+                src="images/brands/lenovo.png"
+                alt="Логотип lenovo"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Услуги и сервисы</button>
+            <li class="brands__item">
+              <img
+                src="images/brands/samsung.png"
+                alt="Логотип samsung"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">
-                Корпоративным клиентам
-              </button>
+            <li class="brands__item">
+              <img
+                src="images/brands/apple.png"
+                alt="Логотип apple"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Продавцам техники</button>
+            <li class="brands__item">
+              <img
+                src="images/brands/viewsonic.png"
+                alt="Логотип viewsonic"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Партнерам</button>
+            <li class="brands__item">
+              <img
+                src="images/brands/bosch.png"
+                alt="Логотип bosch"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Производителям</button>
+            <li class="brands__item">
+              <img
+                src="images/brands/hp.png"
+                alt="Логотип hp"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Наши сервисные центры</button>
+            <li class="brands__item">
+              <img
+                src="images/brands/acer.png"
+                alt="Логотип acer"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
-            <li class="menu__item--m">
-              <button class="main__button-mobile">Контакты</button>
+            <li class="brands__item">
+              <img
+                src="images/brands/sony.png"
+                alt="Логотип sony"
+                class="brands__img"
+              /><button class="brands__btn"></button>
+            </li>
+            <li class="brands__item">
+              <img
+                src="images/brands/lenovo.png"
+                alt="Логотип lenovo"
+                class="brands__img"
+              /><button class="brands__btn"></button>
+            </li>
+            <li class="brands__item">
+              <img
+                src="images/brands/samsung.png"
+                alt="Логотип samsung"
+                class="brands__img"
+              /><button class="brands__btn"></button>
+            </li>
+            <li class="brands__item">
+              <img
+                src="images/brands/apple.png"
+                alt="Логотип apple"
+                class="brands__img"
+              /><button class="brands__btn"></button>
             </li>
           </ul>
-        </nav>
-      </main>
-      <footer class="footer--mobile">
-        <ul class="menu__list--f">
-          <li class="menu__item">
-            <button class="btn menu__button--call"></button>
-          </li>
-          <li class="menu__item">
-            <button class="btn menu__button--chat"></button>
-          </li>
-          <li class="menu__item">
-            <button class="btn menu__button--profile"></button>
-          </li>
-        </ul>
 
-        <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
-        <a href="tel:88008908900" class="phone">8 800 890 89006</a>
-
-        <ul class="languages">
-          <li>
-            <button class="btn__radio">
-              <input
-                class="btn__radio--input"
-                type="radio"
-                name="lang"
-                id="ru"
-              />
-              <label class="btn__radio--text" for="ru">RU</label>
-            </button>
-          </li>
-          <li>
-            <button class="btn__radio">
-              <input
-                class="btn__radio--input"
-                type="radio"
-                name="lang"
-                id="en"
-              />
-              <label class="btn__radio--text" lang="en" for="en">EN</label>
-            </button>
-          </li>
-          <li>
-            <button class="btn__radio">
-              <input
-                class="btn__radio--input"
-                type="radio"
-                name="lang"
-                id="ch"
-              />
-              <label class="btn__radio--text" for="ch" lang="ch" forr="ch"
-                >CH</label
-              >
-            </button>
-          </li>
-        </ul>
-      </footer>
-    </div>
+          <ul class="show">
+            <li><button class="show__btn">Показать все</button></li>
+            <li><button class="hide__btn">Скрыть</button></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
